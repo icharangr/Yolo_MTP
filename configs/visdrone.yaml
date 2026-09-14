@@ -1,4 +1,4 @@
-path: /home/charans/thesis/datasets/VisDrone
+path: /home/charan/thesis/datasets/VisDrone
 
 train: images/train
 val: images/val
