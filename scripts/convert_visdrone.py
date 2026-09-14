@@ -87,7 +87,11 @@ def convert_split(split_name, folder_name):
                     print(f"WARNING: Invalid values in {ann_file}")
                     continue
 
-                # Ignore invalid / ignored regions
+                # Ignore invalid / ignored regions and ground-truth boxes
+                # with score=0 (VisDrone marks these boxes to be ignored).
+                if score == 0:
+                    continue
+
                 if category not in CATEGORY_MAP:
                     continue
 
