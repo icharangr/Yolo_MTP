@@ -75,6 +75,10 @@ def convert_split(split_name, folder_name):
 
                 values = line.split(",")
 
+                # VisDrone annotations may contain a trailing comma.
+                if values and values[-1] == "":
+                    values = values[:-1]
+
                 if len(values) != 8:
                     print(f"WARNING: Invalid annotation: {ann_file}")
                     continue
