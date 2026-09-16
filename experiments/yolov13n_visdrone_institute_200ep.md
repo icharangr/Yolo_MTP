@@ -1,0 +1,21 @@
+# YOLOv13-N VisDrone Institute-GPU Baseline
+
+- Dataset: VisDrone2019-DET
+- Train images: 6471
+- Validation images: 548
+- Input size: 640x640
+- Batch size: 4
+- Epochs: 200
+- Seed: 0
+- AMP: True
+- Optimizer: Auto (resolved to SGD)
+- Device: NVIDIA RTX PRO 4000 Blackwell
+- Best epoch: 144
+- Best Precision: 0.4653
+- Best Recall: 0.3393
+- Best mAP50: 0.3471
+- Best mAP50-95: 0.2023
+- Parameters: 2,449,845
+- GFLOPs: 6.2
+- Training time: 13.361 hours
+- Run directory: /home/charan/thesis/runs/yolov13n_visdrone_institute_300ep
