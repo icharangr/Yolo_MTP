@@ -1,0 +1,67 @@
+{
+    "configuration": {
+        "image_size": 640,
+        "confidence": 0.25,
+        "iou_threshold": 0.5,
+        "device": "cuda:0",
+        "validation_images": 548
+    },
+    "fixed_models": {
+        "N": {
+            "precision": 0.6781012702397669,
+            "recall": 0.46532077333653576,
+            "f1": 0.5357624110501306,
+            "latency_ms": 30.67001693348407,
+            "fps": 32.605133612047254
+        },
+        "S": {
+            "precision": 0.7075123277963972,
+            "recall": 0.5192362059649409,
+            "f1": 0.5850982601851206,
+            "latency_ms": 25.460342360923008,
+            "fps": 39.27676956672892
+        },
+        "L": {
+            "precision": 0.7242633275238914,
+            "recall": 0.5780231067108996,
+            "f1": 0.6313198065494603,
+            "latency_ms": 38.345141036254965,
+            "fps": 26.078923508313856
+        },
+        "X": {
+            "precision": 0.7414621949659325,
+            "recall": 0.5876852011174551,
+            "f1": 0.6439948661319228,
+            "latency_ms": 38.97813415893245,
+            "fps": 25.65540966949631
+        }
+    },
+    "adaptive_router": {
+        "precision": 0.7348188719993856,
+        "recall": 0.5804987335123428,
+        "f1": 0.6362456482024649,
+        "latency_ms": 63.45491404377475,
+        "fps": 15.759220780129716
+    },
+    "oracle": {
+        "precision": 0.7616330714631179,
+        "recall": 0.5998336671987515,
+        "f1": 0.6595280833394548
+    },
+    "routing_distribution": {
+        "N": 19,
+        "S": 13,
+        "L": 244,
+        "X": 272
+    },
+    "router_diagnostics": {
+        "oracle_model_routing_accuracy": 0.48905109489051096,
+        "oracle_model_routing_accuracy_percent": 48.9051094890511,
+        "oracle_adaptive_f1_gap": 0.02328243513698991,
+        "best_fixed_model": "YOLOv13-X",
+        "best_fixed_f1": 0.6439948661319228,
+        "adaptive_vs_best_fixed_f1": -0.00774921792945793,
+        "best_fixed_latency_ms": 38.97813415893245,
+        "adaptive_latency_change_percent": 62.79618153357159
+    }
+}
