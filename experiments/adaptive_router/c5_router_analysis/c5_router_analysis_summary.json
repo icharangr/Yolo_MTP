@@ -1,0 +1,25 @@
+{
+  "experiment": "C5_router_diagnostic_analysis",
+  "validation_images": 548,
+  "routing_accuracy": 0.48905109489051096,
+  "mean_oracle_f1": 0.6595280833394548,
+  "mean_adaptive_f1": 0.6362456482024649,
+  "mean_f1_regret": 0.02328243513699003,
+  "median_f1_regret": 0.0,
+  "mean_oracle_margin": 0.03228939519474678,
+  "median_oracle_margin": 0.02203959244867354,
+  "router_distribution": {
+    "N": 19,
+    "S": 13,
+    "L": 244,
+    "X": 272
+  },
+  "oracle_distribution": {
+    "N": 12,
+    "S": 43,
+    "L": 184,
+    "X": 309
+  },
+  "wrong_routes": 280,
+  "correct_routes": 268
+}
