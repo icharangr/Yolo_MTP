@@ -1,0 +1,60 @@
+{
+    "experiment": "C6-C",
+    "method": "Random Forest pairwise F1 utility-difference regression",
+    "training_samples": 5176,
+    "validation_samples": 1295,
+    "oracle_f1": 0.7496731282821744,
+    "adaptive_f1": 0.7289468865326769,
+    "mean_f1_regret": 0.020726241749497575,
+    "median_f1_regret": 0.0024975024975024684,
+    "maximum_f1_regret": 0.4571428571428571,
+    "routing_accuracy": 0.4386100386100386,
+    "regret_le_0.01": 0.5652509652509653,
+    "regret_le_0.02": 0.6718146718146718,
+    "regret_le_0.05": 0.8679536679536679,
+    "regret_le_0.10": 0.9667953667953668,
+    "regression_metrics": {
+        "N_minus_S": {
+            "model_a": "YOLOv13-N",
+            "model_b": "YOLOv13-S",
+            "mae": 0.047648584407071114,
+            "rmse": 0.07118100532607961,
+            "r2": 0.006619654916241058
+        },
+        "N_minus_L": {
+            "model_a": "YOLOv13-N",
+            "model_b": "YOLOv13-L",
+            "mae": 0.05528209053466305,
+            "rmse": 0.07695117013849706,
+            "r2": 0.1704051770716123
+        },
+        "N_minus_X": {
+            "model_a": "YOLOv13-N",
+            "model_b": "YOLOv13-X",
+            "mae": 0.05366552152506969,
+            "rmse": 0.07498551888180982,
+            "r2": 0.17285493122556916
+        },
+        "S_minus_L": {
+            "model_a": "YOLOv13-S",
+            "model_b": "YOLOv13-L",
+            "mae": 0.046930426524714616,
+            "rmse": 0.06890332507128262,
+            "r2": 0.04787730356214648
+        },
+        "S_minus_X": {
+            "model_a": "YOLOv13-S",
+            "model_b": "YOLOv13-X",
+            "mae": 0.047279325061521195,
+            "rmse": 0.06847613871529999,
+            "r2": 0.06053545808642269
+        },
+        "L_minus_X": {
+            "model_a": "YOLOv13-L",
+            "model_b": "YOLOv13-X",
+            "mae": 0.03593598225678293,
+            "rmse": 0.05191378891484403,
+            "r2": -0.03326834765142772
+        }
+    }
+}
