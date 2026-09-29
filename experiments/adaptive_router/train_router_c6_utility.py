@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import numpy as np
 import pandas as pd
+import joblib
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -289,6 +290,37 @@ for model in MODELS:
     print(
         f"R2   : {r2:.6f}"
     )
+
+
+# ============================================================
+# SAVE TRAINED F1 REGRESSORS
+# ============================================================
+
+print()
+print("=" * 70)
+print("SAVING TRAINED F1 REGRESSORS")
+print("=" * 70)
+
+for model in MODELS:
+
+    model_path = (
+        OUTPUT_DIR
+        / f"{model}_f1_regressor.joblib"
+    )
+
+    joblib.dump(
+        regressors[model],
+        model_path
+    )
+
+    print(
+        f"{MODEL_LABELS[model]} saved to:"
+    )
+
+    print(
+        model_path
+    )
+
 
 
 # ============================================================
