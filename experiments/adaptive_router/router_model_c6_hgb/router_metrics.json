@@ -1,0 +1,16 @@
+{
+    "classifier": "HistGradientBoostingClassifier",
+    "accuracy": 0.4664092664092664,
+    "balanced_accuracy": 0.31332251369016073,
+    "macro_f1": 0.32423103383796725,
+    "weighted_f1": 0.45145783862199274,
+    "training_samples": 5176,
+    "validation_samples": 1295,
+    "random_state": 42,
+    "test_size": 0.2,
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 15,
+    "l2_regularization": 1.0
+}

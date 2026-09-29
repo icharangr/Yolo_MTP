@@ -1,0 +1,14 @@
+[
+    "probe_num_predictions",
+    "probe_mean_conf",
+    "probe_max_conf",
+    "probe_median_conf",
+    "probe_mean_area_ratio",
+    "probe_median_area_ratio",
+    "probe_small_ratio",
+    "probe_medium_ratio",
+    "probe_large_ratio",
+    "probe_mean_width_ratio",
+    "probe_mean_height_ratio",
+    "probe_spatial_density"
+]
